@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/png" href="img/favicon/android-icon-36x36.png">
+    <title>Inscripción</title>
+    <script src="/js/validar.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="centrado">
+
+            <img class="logo" src="img/logo remobe.png" alt="logo">
+
+
+
+            <div class="redesSociales">
+                <a href="https://www.facebook.com/" target="__blank"><img src="img/facebook-logo-2.png" alt="facebook" class="iconSocial"></a>
+                <a href="https://www.instagram.com/" target="__blank"><img src="img/instagram-logo.jpg" alt="instagram" class="iconSocial"></a>
+                <a href="https://twitter.com/?lang=es" target="__blank"><img src="img/twitter-logo.png" alt="twitter" class="iconSocial"></a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="establecimiento.html">Establecimiento</a></li>
+                <li><a href="inscripcion.html">Inscripción</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html" target="_blank"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Inscripciones 2022</h2>
+        <section class="inscripciones-arriba">
+
+            <form action="" method="POST" class="inscripciones">
+                <label for="idiomas">Inscripciones para cursos de: </label>
+                <select name="idiomas" id="idiomas">
+                    <option value="1">Inglés</option>
+                    <option value="2">Portugués </option>
+                    <option value="3">Español</option> 
+                </select>
+
+                <label for="nivel">Nivel: </label>
+                <select name="nivel" id="nivel">
+                    <option value="1">Básico</option>
+                    <option value="2">Avanzado</option>
+                    
+                </select>
+
+                <label for="sede">En la sede: </label>
+                <select name="sede" id="sede">
+                    <option value="1">Ciudad Autónoma de Buenos Aires</option>
+                    <option value="2">Buenos Aires - GBA Oeste</option>
+                    <option value="3">Mendoza</option>
+                    <option value="4">Rosario</option>
+                </select>
+
+                <label for="">Horarios de cursada:</label>
+                <div class="flex-evenly">
+                    <div> Mañana
+                        <input type="radio" name="turnos" id="mañana">
+                    </div>
+                    <div>
+                        Tarde
+                        <input type="radio" name="turnos" id="tarde">
+                    </div>
+                    <div>
+                        Noche
+                        <input type="radio" name="turnos" id="noche">
+                    </div>
+                </div>
+                <label for="">Modalidad de cursada:</label>
+                <div class="flex-evenly">
+                    <div>
+                        Presencial
+                        <input type="radio" name="modalidad" id="presencial">
+                    </div>
+                    <div>
+                        Virtual
+                        <input type="radio" name="modalidad" id="virtual">
+                    </div>
+                </div>
+
+                <label for="precios">Precio:</label>
+
+                <select name="precios" id="precios">
+                    <option value="1">Pago al contado desde - $ 15.999.-</option>
+                    <option value="2">En 3 cuotas desde - $ 6.500.-</option>
+                    <option value="3">En 6 cuotas desde - $ 3.000.-</option>
+                </select>
+                <p> <small>Nuestros precios varían según los medios de pago, nivel y modalidad</small> </p>
+
+            </form>
+            <p> Los cursos comienzan el día 07/03/2.022</p>
+        </section>
+
+        <section class="inscripciones-datos">
+            <form action="" method="POST" class="inscripciones" onsubmit="return validar();">
+
+                <p>¡Completa tu inscripción!</p>
+
+                <p>Datos Personales</p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad" id="ciudad" required>
+
+                <label for="provincia">Provincia:</label>
+                <input type="text" name="provincia" id="provincia" required>
+
+                <button class="boton-finalizar">Finalizar Inscripción</button>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>Arce, Claudia Rosana</li>
+                <li>DNI 17.935.706</li>
+                <li>carce123@hotmail.com</li>
+                <li>Codo a Codo</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="establecimiento.html">Establecimiento</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html" target="__blank">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/" target="__blank"><img src="img/facebook-logo-2.png" alt="facebook" class="iconSocial"></a>
+            <a href="https://www.instagram.com/" target="__blank"><img src="img/instagram-logo.jpg" alt="instagram" class="iconSocial"></a>
+            <a href="https://twitter.com/?lang=es" target="__blank"><img src="img/twitter-logo.png" alt="twitter" class="iconSocial"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
